@@ -8,6 +8,11 @@ const GAMES = [
     folder: "example-game",
     thumb: ""
   },
+  {
+  title: "2048",
+  folder: "2048",
+  thumb: "games/2048/thumb.png"
+  },
 
   // {
   //   title: "Another Game",
