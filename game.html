@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Game</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="game-header">
+    <a href="index.html">&larr; Back</a>
+    <span id="title"></span>
+  </div>
+
+  <div class="game-frame-wrap">
+    <iframe id="frame" allowfullscreen></iframe>
+  </div>
+
+  <script src="games.js"></script>
+  <script>
+    const params = new URLSearchParams(location.search);
+    const folder = params.get('g');
+    const game = GAMES.find(g => g.folder === folder);
+
+    document.getElementById('title').textContent = game ? game.title : 'Unknown game';
+    document.getElementById('frame').src = `games/${folder}/index.html`;
+  </script>
+
+</body>
+</html>
