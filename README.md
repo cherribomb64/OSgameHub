@@ -1,11 +1,11 @@
-# Games Site
+# OSgameHub
 
-Minimal, self-hosted games hub. Drop in open-source HTML games and they show up as boxes on the homepage.
+minimal, self-hosted games hub. drop in open-source HTML games and they show up as boxes on the homepage.
 
 ## Adding a game
 
 1. Make a new folder inside `games/`, named after the game (e.g. `games/2048/`).
-2. Put the game's files in there. It needs an `index.html` at the root of that folder — if the game came as a zip with `index.html` + assets, just dump the whole thing in.
+2. Put the game's files in there. It needs an `index.html` at the root of that folder. if the game came as a zip with `index.html` + assets, just dump the whole thing in.
 3. Open `games.js` and add one entry:
 
 ```js
@@ -16,7 +16,7 @@ Minimal, self-hosted games hub. Drop in open-source HTML games and they show up 
 }
 ```
 
-That's it — refresh the homepage and the box appears automatically, with search working too.
+that's it. refresh the homepage and the box appears automatically, with search working too.
 
 ## Notes
 
